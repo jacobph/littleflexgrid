@@ -1,0 +1,16 @@
+/*responsive breakpoints  are em based. This lets our layout change and flow in response to the user's 
+browser settings. If you really want or need pixels, the rough equivalents are below.
+Don't like these breakpoints? change them to suit your needs!
+ */
+$bp-s: 30em;
+$bp-m: 48em;
+$bp-l: 62em;
+$bp-xl: 75em;
+
+/* $bp-s: 490px;
+$bp-m: 768px;
+$bp-l: 992px;
+$bp-xl: 1200px; */
+
+/* gutter width for .gutter class */
+$gutter: 10px;

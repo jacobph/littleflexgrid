@@ -1,5 +1,5 @@
 {
-  "name": "bicep",
+  "name": "littleflexgrid",
   "version": "0.1.0",
   "description": "A CSS flexbox layout library",
   "main": "index.js",

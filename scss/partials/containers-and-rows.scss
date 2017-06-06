@@ -1,0 +1,81 @@
+/* containers, like in every other css framework. Fixed width and fluid. */
+.container{
+  margin:0 auto;
+  padding-left:1vw;
+  padding-right:1vw;
+  max-width:100%;
+  @media (min-width:$bp-s){
+    max-width:$bp-s;
+  }
+  @media (min-width:$bp-m){
+    max-width:$bp-m;
+  }
+  @media (min-width:$bp-l){
+    max-width:$bp-l;
+    
+  }
+  @media (min-width:$bp-xl){
+    max-width:$bp-xl;
+  }
+}
+
+.container-fluid {
+  margin:0 auto;
+  width:100%;
+}
+
+.row {
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  align-items:stretch;
+  
+  > *{
+    flex-grow:1;
+    flex-basis:auto;
+  }
+
+  //helper classes for flex-direction and align-item
+  //all of these get applied to the .row element
+  
+  &.flex-column {
+    flex-direction:column;
+  }  
+
+  &.flex-row-reverse{
+    flex-direction: row-reverse;
+  }
+
+  &.flex-column-reverse{
+    flex-direction: column-reverse;
+  }
+  
+  &.flex-align-center{
+    align-items:center;
+  }
+  
+  &.flex-align-start{
+    align-items:flex-start;
+  }
+  
+  &.flex-align-end{
+    align-items:flex-end;
+  }
+
+  &.flex-justify-center{
+    justify-content:center;
+  }
+
+  &.flex-justify-end{
+    justify-content: flex-end;
+  }
+  
+  &.flex-nowrap{
+    flex-wrap:nowrap;
+  }
+  
+  &.flex-center{
+    align-items:center;
+    justify-content:center;
+  }
+}
